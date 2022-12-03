@@ -1,0 +1,8 @@
+#En la ruta donde esté el dockerfile de backend
+docker build -t backend_pokemon .
+#En la ruta donde esté el dockerfile de frontend
+docker build -t frontend_pokemon .
+docker tag backend_pokemon luisman10/backend_pokemon:1.0
+docker tag frontend_pokemon luisman10/frontend_pokemon:1.0
+docker push luisman10/backend_pokemon:1.0
+docker push luisman10/frontend_pokemon:1.0
